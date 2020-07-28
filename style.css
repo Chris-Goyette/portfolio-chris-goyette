@@ -1,0 +1,35 @@
+/* Set ALL HTML elements with border-box sizing */
+
+* {
+  box-sizing: border-box;
+}
+
+
+header, footer {
+  background-color: #000000;
+  color: #8aea92;
+  text-align: center;
+}
+
+main {
+  background-color: #80ADA0;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+main h3, main h4 {
+  color: #33202A;
+  text-align: center;
+}
+
+
+/* roll over links */
+a:link {color: blue;}
+a:visited {color: darkblue;}
+a:hover {color: pink;}
+a:active {color: palevioletred;}
