@@ -1,35 +1,82 @@
 /* Set ALL HTML elements with border-box sizing */
 
+/* General Styles */
+
 * {
   box-sizing: border-box;
 }
-
 
 header, footer {
   background-color: #000000;
   color: #8aea92;
   text-align: center;
+  height: 200px;
+  border: solid; 
+}
+
+ h3 {
+  color: #33202A;
+  border: solid;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 28px;
 }
 
 main {
   background-color: #80ADA0;
+  border: solid;
+  border-color: #8aea92;
+  
 }
 
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+p {
+  font-family: 'Courier New', Courier, monospace; 
+  font-size: 20px;
 }
 
-main h3, main h4 {
-  color: #33202A;
-  text-align: center;
+.list {
+  font-family: 'Courier New', Courier, monospace; 
 }
 
+.article {
+  margin: 10px 10px 0 10px ;  
+}
+
+.group img {
+  width: 100%;
+  border: solid;
+}
+
+/* Groups & Items  (Mobile First) */
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1; 
+  margin: 10px;
+}
+
+.box {
+  background-color: #000000;
+  color: #8aea92;
+  padding: 10px;
+}
+
+/* Groups & Items  (Desktop) */
+@media all and (min-width: 800px) { /* if screen width is >= 800px then change section padding and flex direction to row */
+  article {
+    padding: 0 10%; /* 10% left and right padding in relation to the parent width? */
+  }
+  .group {
+    flex-direction: row;
+  }
+}
 
 /* roll over links */
-a:link {color: blue;}
-a:visited {color: darkblue;}
-a:hover {color: pink;}
+a:link {color: red;}
+a:visited {color: pink;}
+a:hover {color: lime;}
 a:active {color: palevioletred;}
